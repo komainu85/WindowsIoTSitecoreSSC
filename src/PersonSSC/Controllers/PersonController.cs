@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using WindowsIoTSitecoreSSC.Model;
-using Sitecore.Services.Infrastructure.Services;
+﻿using PersonSSC.Model;
 using Sitecore.Services.Core;
+using Sitecore.Services.Infrastructure.Services;
 
-namespace WindowsIoTSitecoreSSC.Controllers
+namespace PersonSSC.Controllers
 {
+    [ServicesController]
     public class PersonController : EntityService<Person>
     {
-        protected PersonController(IRepository<Person> repository) : base(repository)
+        public PersonController(IRepository<Person> repository) : base(repository)
         {
         }
     }
