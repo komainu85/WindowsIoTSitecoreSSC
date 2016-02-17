@@ -4,9 +4,11 @@ using PersonSSC.Model;
 using Sitecore.Analytics.Data;
 using Sitecore.Analytics.DataAccess;
 using Sitecore.Analytics.Model;
+using Sitecore.Analytics.Model.Entities;
 using Sitecore.Analytics.Tracking;
 using Sitecore.Configuration;
 using Sitecore.Data;
+using Sitecore.Services.Core.ComponentModel;
 
 namespace PersonSSC.Repositories
 {
