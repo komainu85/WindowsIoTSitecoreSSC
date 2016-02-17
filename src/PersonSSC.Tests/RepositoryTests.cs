@@ -19,17 +19,23 @@ namespace PersonSSC.Tests
         [Test]
         public void Create_Contact_Called_When_Existing_Contact_Not_Found()
         {
-            var xdbContactRepository = new Mock<IXdbContactRepository>();
-
-            var lockAttemptStatus = LockAttemptStatus.NotFound;
-            xdbContactRepository.Setup(x => x.FindContact(It.IsAny<string>(), out lockAttemptStatus)).Returns((Contact)null);
-            xdbContactRepository.Setup(x => x.CreateContact(It.IsAny<Person>())).Returns((Contact)null);
+            var xdbContactRepository = SetupXdbContactMock();
 
             var personRepository = new PersonRepository(xdbContactRepository.Object, null);
 
             personRepository.Add(new Person() { Surname = "Mr New", FirstName = "Bob" });
 
             xdbContactRepository.Verify(t => t.CreateContact(It.IsAny<Person>()));
+        }
+
+        private Mock<IXdbContactRepository> SetupXdbContactMock()
+        {
+            var xdbContactRepository = new Mock<IXdbContactRepository>();
+            var lockAttemptStatus = LockAttemptStatus.NotFound;
+            xdbContactRepository.Setup(x => x.FindContact(It.IsAny<string>(), out lockAttemptStatus)).Returns((Contact)null);
+            xdbContactRepository.Setup(x => x.CreateContact(It.IsAny<Person>())).Returns((Contact)null);
+
+            return xdbContactRepository;
         }
     }
 }
