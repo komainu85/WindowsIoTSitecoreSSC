@@ -70,7 +70,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\PersonSSC\PersonSSC.csproj">
+    <ProjectReference Include="..\PersonSSC\PersonSSC.csproj">
       <Project>{005982d5-5717-492e-b3bb-68e2cea5b044}</Project>
       <Name>PersonSSC</Name>
     </ProjectReference>

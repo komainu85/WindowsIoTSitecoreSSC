@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13142E81-0B6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreKiosk", "src\SitecoreKiosk\SitecoreKiosk.csproj", "{FD4F3A22-9DDF-409A-8DBD-3A4E2470CFFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonSSC.Tests", "PersonSSC.Tests\PersonSSC.Tests.csproj", "{7795DBFF-50D7-4857-8300-E79C8E63FA76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonSSC.Tests", "src\PersonSSC.Tests\PersonSSC.Tests.csproj", "{7795DBFF-50D7-4857-8300-E79C8E63FA76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
