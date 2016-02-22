@@ -15,9 +15,11 @@ namespace PersonSSC
 
         public Person MapPerson(Contact contact)
         {
-            Person person = new Person {Id = contact.Identifiers.Identifier};
+            Person person = new Person();
 
             _xdbFacetRepository.GetPersonalInfo(contact, ref person);
+
+            person.Id = contact.Identifiers.Identifier;
 
             return person;
         }
