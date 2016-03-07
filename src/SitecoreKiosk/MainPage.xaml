@@ -7,7 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-1064,-184">
+        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Margin="408,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="827" FontSize="24" Height="85"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="114,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="First Name:&#xA;" FontSize="24" RenderTransformOrigin="0.592,-0.18" Height="85" Width="233" FontWeight="Bold" />
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="586,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Text="Kiosk"/>
+        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Margin="408,372,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="827" FontSize="24" Height="85"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="114,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Last Name:&#xA;" FontSize="24" Height="91" Width="233" FontWeight="Bold" />
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="408,502,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="827" FontSize="24" Height="85"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="114,502,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email:" FontSize="24" Height="85" Width="146" FontWeight="Bold" />
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="629,636,0,0" VerticalAlignment="Top" FontSize="24" Height="126" Width="606" FontWeight="Bold" Click="btnSubmit_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="114,132,0,0" TextWrapping="Wrap" Text="For a chance to win an awesome prize, please fill in your details" VerticalAlignment="Top" Height="47" Width="490"/>
 
     </Grid>
 </Page>
